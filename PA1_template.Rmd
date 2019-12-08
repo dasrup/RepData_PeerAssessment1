@@ -103,6 +103,7 @@ numMissingValues <- length(which(is.na(activityData$steps)))
 ```{r}
 activityDataImputed <- activityData
 activityDataImputed$steps <- impute(activityData$steps, fun=mean)
+
 ```
 
 
